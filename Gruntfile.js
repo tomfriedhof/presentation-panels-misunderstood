@@ -1,6 +1,6 @@
 /* global module:false */
 module.exports = function(grunt) {
-	var port = grunt.option('port') || 8000;
+	var port = grunt.option('port') || 8001;
 	var base = grunt.option('base') || '.';
 
 	// Project configuration
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/_custom.scss' ],
 				tasks: 'css-core'
 			},
 			html: {
